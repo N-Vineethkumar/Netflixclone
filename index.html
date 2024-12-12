@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            color: antiquewhite;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.807);
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none;
+        }
+        body::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, and Opera */
+        }
+        li{
+            list-style-type: none;
+        }
+        .container{
+            background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/8e8ff9d3-17b4-4ce1-b571-06ba4e025cca/web_auto_scroll/IN-en-20241125-TRIFECTA-1bc613d1-6f02-44e9-942d-b871f9343b86_large.jpg");
+        }
+        #email{
+            width: 29vw;
+            margin: 10px;
+        }
+        .container1{
+            display: flex;
+            overflow: scroll;
+            width: 80vw;
+            padding: 20px;
+            margin: auto;
+        }
+        .card1{
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .card1:hover{
+            scale: 1.05;
+            transition: 0.4s all ease;
+            cursor: pointer;
+        }
+        img{
+            border-radius: 10px;
+        }
+        .bcards{
+            display:flex;
+            background-color: transparent;
+        }
+        .reasons{
+            display: flex; 
+            margin: 10px;
+            padding: 10px;
+           color: antiquewhite;
+            background: rgba(161, 147, 147, 0.196);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(83, 77, 77, 0.427);
+            backdrop-filter: blur(6.3px);
+            -webkit-backdrop-filter: blur(6.3px);
+            border: 1px solid rgba(255, 255, 255, 0.3)
+            /* justify-content: space-between; */
+            /* align-items: center; */
+        }
+        @media (min-width:1100px){
+            .reasons{
+                width: 400px;
+                flex-direction: column;
+            }
+        }
+        @media (max-width:1000px){
+            .bcards{
+                flex-direction: column;
+              
+            }
+            .reasons{
+               flex-direction: row;
+               justify-content: space-between;
+            }
+        }
+        i{
+            font-size: 40px;
+            padding-bottom: 0px;
+            color: rgba(231, 121, 123, 0.644);
+            text-align: right;
+            
+        }
+        .view{
+            width: 80vw;
+            margin: auto;
+        }
+        h1{
+            margin: 20px 10px;
+        }
+        .center{
+            text-align: center;
+            margin: 60px 2px;
+        }
+        .ques{
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent;
+            margin: 10px;
+            padding: 15px 15px;
+            /* border-radius: 12px; */
+            /* border: solid 2px rgb(58, 53, 53); */
+            color: antiquewhite;
+            background: rgba(255, 255, 255, 0.196);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(71, 68, 68, 0.427);
+            backdrop-filter: blur(6.3px);
+            -webkit-backdrop-filter: blur(6.3px);
+            border: 1px solid rgba(255, 255, 255, 0.3)
+        }
+        .fotcard{
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="d-flex justify-content-between bg-dark shadow">
+        <div class="logo">
+            <img src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="" width="200px">
+            <img src="" alt="">
+        </div>
+        <ul class="d-flex p-3">
+            <li class="mx-3 px-2">
+                <div class="dropdown">
+                    <a class="btn btn-outline-light rounded-pill dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     English
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Hindi</a></li>
+                      <li><a class="dropdown-item" href="#">Telugu</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="btn btn-light rounded-pill px-2">Sign in</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="text-center text-light container rounded" >
+            <h1 style="font-size: 70px;">unlimited movies,</h1>
+            <h1 style="font-size: 70px;">Tv shows and</h1>
+            <h1 style="font-size: 70px;">more</h1>
+            <p  style="font-size: 30px;">starts at ₹149. Cancel at any time.</p>
+    </div>
+    <div class="text-tertiary text-center">
+        <p>Ready to watch ? Enter your email to create or restart your membership.</p>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+        <form action="">
+            <input type="email" name="" id="email" placeholder="Email Address" class="rounded-pill py-3 px-3" width="60%">
+        </form>
+        <a class="btn btn-danger rounded-pill text-center px-3 py-2 fs-4">Get Started  &gt; </a>
+    </div>
+    <div class="view">
+        <h1>Trending Now</h1>
+        <div class="container1">
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQP88oTNRKVBQv0yXFBoXoSlm-TzKA6a97Yx934INAsPSlHJxnecfowsIJFpecLJA24deSGLmdQw1RLy_YSC2m-ue0yNZapHrei_jWt-tot9kHfXKWHsQk0uaehn6CAQJMzenIIWnku3qZsCB0iD9fjNCXkSEpS3dlhOKOknfvtrbWM_lMzkbJPZEM5RhCuMhhF03nMcyYUhfpWv9_xUDHGY5WpyKXxZYA90Z-zUA7MdXVRL7f_gJzG2-9kBOVjT2l2zZJEWQFfCr3bPq8nkSW_gOig1B5qDLPVPSPruorwUPHvn0jpG75AgMTndNu9p8s4DCkdtMZ1U5NthTA5Vq-hd6g9BRv5AdeRRiDbphYPor2V_Nw8.jpg?r=008" alt="">
+        </div>
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTBQ-DRPgGWnikyf8h3LHzezwBUTm-BTfDcH8pVb5eGYm-IvGZem_UL0TGv64_ntwtrypsgiuWtsF0OOvVJv6ghT5Aw3-1tXgWo.jpg?r=2e8" alt="">
+        </div>
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABUdQIVzAeAF794KYHECVLDBirKowTKiJIw4TIQkg43LPcrWTnLsxclhbZcUQI1zoVhpk0drWdLbYgVrfRugKaU5K5n1X2xfR531uMQLbmug6TetsHCUUL5VCW-naf7GWKOD2ir6Asg-xtddyMPcot4ri88dswX-DRAk.jpg?r=17c" alt="">
+        </div>
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABY8jd6KqjnnBYa9oic1ny3BTmDoRGPFOjP_nWdxChwc0nJJxWk-2hpbNwM9btTqa3BlOX13N5jb_hYuSkBM4wumqX200XezceBxpesSmUe9YrvDnJCC1qF1-0Qp3WrTKV9LhoUqPa4yVVWF9Uvn8Of8rLLp8rKza-xeMxEE6t-QRQm012xhvIvAdSFYG-EtoSrD0M7IeRaVryCglndLrYLE5M_8eSu8Q-LqSEmx_vHoql461w-LFwWgMR9QId0I0L_KueAK-ztDaHNXPIjNVU9Yzh_7slxRFJ92xd2fN6oyTf_ijxfmO70qrPsbG8HqgiI5OehDfZ5_tWiBRtR2Nb04.jpg?r=680" alt="">
+        </div>
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbGYPhSsZN6bT_vZRlhBeCauR0qMLVuSmFe3WuIoEmajJgotNN87QGgkuK8Rh1oSz7P1cKNnd5crnfXDzwK7PRNubh_akCXqTQQAQG5P5UOYyAgDhPPbjP5hnUhg1kJsjOOVSoysP38-hMul9W5ThY1SNrH0q8WF97Js4cs-7RH-ONFP8oYaCDeEoi-UpFvpRNQsDjyIgJVorIKcUtpZp1awprBDCVGMrWcVitV3dvSWdecp4KcU-RcCaUYxHD442maeWfX0UhfhJVgc_8QlrppXzTy1fNK9KCYptlNz89kgPax94E_p3Q-KhlRniw_k-7edxlmSLxne87WYWXM4eF99u0iPvKxiB7nqCa6PybB6UMgJqis.jpg?r=cf5" alt="">
+        </div>
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZ7O5XnfjV-smh3VNGtfk2Tkon1_OAR3Cj5U7n9AVEH6FKrs8Hfoqim9jRr3qcg2kN01CXvoAwZL5tbDkcNxmU2u_5UaIPTeiaK2IvQBu9Xwz4sTd98sjZLxodQUjhuaUgxu_ffaHEPO7dhy6cq3I9rSFX0AvWpVo7hjIoiIc4W4QVcGDVPkXgLMwDCc41ZkDEp-8MCliiWifweF2_OKIhDw9Z_JiuUlM9Xv5NiJCYvFrKpXxtzh5APY58Q1F8CcPpXBqflEBrGEDUaRn0n6dGQ49FE7jShcp1-V6vrVa1w6EAN77yWmZh7GZR2ObWP4ObdseF5AqrjptiCpALdvWgk.jpg?r=136" alt="">
+        </div>
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABd_NxxEBws4fdAIGF25dWrVpDmCcQUAS_bmZMxtD7eYotwhUGRW6-q7KG2kULymq-i6M0wrQum0Ovjs3-QbQtA_X7X7lVc8iwnzmf5A33R3RAcfVoxbPzTvNSkEV4HiXkU8ijx6zP_KrVsfOlAABD4h53-VD_rAfmy5Tnri7qzWnO8o6IICHFc7DJNvOfJJh-CNkLkpkUQrhgIVQYsYkUdujGtjpWcXTyFiSj1pUYqn9GbWp2OMsLzE3Z2iS1zB5AKVUNeOYD6Y5TQLbkIHUElHSBPtMw57xcKaZBNHxpKkIuf2ciTx1qFRpuvFMBfuzkeDnwzZHIr3g2anUq8F6rLA.jpg?r=baa" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="view">
+        <h1>Only on Netflix</h1>
+    <div class="container1">
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQP88oTNRKVBQv0yXFBoXoSlm-TzKA6a97Yx934INAsPSlHJxnecfowsIJFpecLJA24deSGLmdQw1RLy_YSC2m-ue0yNZapHrei_jWt-tot9kHfXKWHsQk0uaehn6CAQJMzenIIWnku3qZsCB0iD9fjNCXkSEpS3dlhOKOknfvtrbWM_lMzkbJPZEM5RhCuMhhF03nMcyYUhfpWv9_xUDHGY5WpyKXxZYA90Z-zUA7MdXVRL7f_gJzG2-9kBOVjT2l2zZJEWQFfCr3bPq8nkSW_gOig1B5qDLPVPSPruorwUPHvn0jpG75AgMTndNu9p8s4DCkdtMZ1U5NthTA5Vq-hd6g9BRv5AdeRRiDbphYPor2V_Nw8.jpg?r=008" alt="">
+        </div>
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTBQ-DRPgGWnikyf8h3LHzezwBUTm-BTfDcH8pVb5eGYm-IvGZem_UL0TGv64_ntwtrypsgiuWtsF0OOvVJv6ghT5Aw3-1tXgWo.jpg?r=2e8" alt="">
+        </div>
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABUdQIVzAeAF794KYHECVLDBirKowTKiJIw4TIQkg43LPcrWTnLsxclhbZcUQI1zoVhpk0drWdLbYgVrfRugKaU5K5n1X2xfR531uMQLbmug6TetsHCUUL5VCW-naf7GWKOD2ir6Asg-xtddyMPcot4ri88dswX-DRAk.jpg?r=17c" alt="">
+        </div>
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABY8jd6KqjnnBYa9oic1ny3BTmDoRGPFOjP_nWdxChwc0nJJxWk-2hpbNwM9btTqa3BlOX13N5jb_hYuSkBM4wumqX200XezceBxpesSmUe9YrvDnJCC1qF1-0Qp3WrTKV9LhoUqPa4yVVWF9Uvn8Of8rLLp8rKza-xeMxEE6t-QRQm012xhvIvAdSFYG-EtoSrD0M7IeRaVryCglndLrYLE5M_8eSu8Q-LqSEmx_vHoql461w-LFwWgMR9QId0I0L_KueAK-ztDaHNXPIjNVU9Yzh_7slxRFJ92xd2fN6oyTf_ijxfmO70qrPsbG8HqgiI5OehDfZ5_tWiBRtR2Nb04.jpg?r=680" alt="">
+        </div>
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbGYPhSsZN6bT_vZRlhBeCauR0qMLVuSmFe3WuIoEmajJgotNN87QGgkuK8Rh1oSz7P1cKNnd5crnfXDzwK7PRNubh_akCXqTQQAQG5P5UOYyAgDhPPbjP5hnUhg1kJsjOOVSoysP38-hMul9W5ThY1SNrH0q8WF97Js4cs-7RH-ONFP8oYaCDeEoi-UpFvpRNQsDjyIgJVorIKcUtpZp1awprBDCVGMrWcVitV3dvSWdecp4KcU-RcCaUYxHD442maeWfX0UhfhJVgc_8QlrppXzTy1fNK9KCYptlNz89kgPax94E_p3Q-KhlRniw_k-7edxlmSLxne87WYWXM4eF99u0iPvKxiB7nqCa6PybB6UMgJqis.jpg?r=cf5" alt="">
+        </div>
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZ7O5XnfjV-smh3VNGtfk2Tkon1_OAR3Cj5U7n9AVEH6FKrs8Hfoqim9jRr3qcg2kN01CXvoAwZL5tbDkcNxmU2u_5UaIPTeiaK2IvQBu9Xwz4sTd98sjZLxodQUjhuaUgxu_ffaHEPO7dhy6cq3I9rSFX0AvWpVo7hjIoiIc4W4QVcGDVPkXgLMwDCc41ZkDEp-8MCliiWifweF2_OKIhDw9Z_JiuUlM9Xv5NiJCYvFrKpXxtzh5APY58Q1F8CcPpXBqflEBrGEDUaRn0n6dGQ49FE7jShcp1-V6vrVa1w6EAN77yWmZh7GZR2ObWP4ObdseF5AqrjptiCpALdvWgk.jpg?r=136" alt="">
+        </div>
+        <div class="card1">
+            <img src="https://occ-0-3365-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABd_NxxEBws4fdAIGF25dWrVpDmCcQUAS_bmZMxtD7eYotwhUGRW6-q7KG2kULymq-i6M0wrQum0Ovjs3-QbQtA_X7X7lVc8iwnzmf5A33R3RAcfVoxbPzTvNSkEV4HiXkU8ijx6zP_KrVsfOlAABD4h53-VD_rAfmy5Tnri7qzWnO8o6IICHFc7DJNvOfJJh-CNkLkpkUQrhgIVQYsYkUdujGtjpWcXTyFiSj1pUYqn9GbWp2OMsLzE3Z2iS1zB5AKVUNeOYD6Y5TQLbkIHUElHSBPtMw57xcKaZBNHxpKkIuf2ciTx1qFRpuvFMBfuzkeDnwzZHIr3g2anUq8F6rLA.jpg?r=baa" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="view">
+        <h1>More reasons to join</h1>
+        <div class="bcards">
+            <div class="reasons">
+            <p class="pcent"> stories tailered to your taste.</p><br>
+            <i class="fa-solid fa-hand-holding-heart"></i>
+        </div>
+        <div class="reasons">
+            <p>Cancel or switch plans any time</p>
+            <i class="fa-solid fa-handshake"></i>
+        </div>
+        <div class="reasons">
+            <p> A place just for kids</p>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="reasons">
+            <p> For your phone, tablet, laptop and TV.</p>
+            <i class="fa-solid fa-tv"></i>
+        </div>
+        </div>
+    </div>
+    <div class="view">
+        <h1 style="font-size: 50px; color: white;">Frequently Asked Questions</h1>
+        <div class="ques">
+            <p>What is Netflix?</p>
+            <i class="fa-regular fa-plus" style="color: rgba(255, 255, 255, 0.848);"></i>
+        </div>
+        <div class="ques">
+            <p>What is Netflix?</p>
+            <i class="fa-regular fa-plus" style="color: rgba(255, 255, 255, 0.76);"></i>
+        </div>
+        <div class="ques">
+            <p>What is Netflix?</p>
+            <i class="fa-regular fa-plus"  style="color: rgba(255, 255, 255, 0.711);"></i>
+        </div>
+        <div class="ques">
+            <p>What is Netflix?</p>
+            <i class="fa-regular fa-plus" style="color: rgba(255, 255, 255, 0.651);"></i>
+        </div>
+        <div class="ques">
+            <p>What is Netflix?</p>
+            <i class="fa-regular fa-plus" style="color: rgba(255, 255, 255, 0.667);"></i>
+        </div>
+        <div class="ques">
+            <p>What is Netflix?</p>
+            <i class="fa-regular fa-plus" style="color: rgba(255, 255, 255, 0.716);"></i>
+        </div>
+        <div class="center">
+            <a href="" class="btn btn-danger rounded-pill px-4" >Get Started</a>
+            <p style="color: white;">Create or Restart Your membership</p>
+        </div>
+        <div class="d-flex">
+            <p style="color: whitesmoke;">Questions? Call </p>
+            <a href="" style="color: whitesmoke;">000-800-919-1743</a>
+        </div>
+        <div class="d-flex">
+            <div class="fotcard">
+            <a href="" style="color: aliceblue;">FAQ's</a>
+            <a href="" style="color: aliceblue;">Investor relations</a>
+            <a href="" style="color: aliceblue;">Privacy</a>
+            <a href="" style="color: aliceblue;">Speed Test</a>
+
+            </div>
+            <div class="fotcard">
+            <a href="" style="color: aliceblue;">FAQ's</a>
+            <a href="" style="color: aliceblue;">Investor relations</a>
+            <a href="" style="color: aliceblue;">Privacy</a>
+            <a href="" style="color: aliceblue;">Speed Test</a>
+
+            </div>
+            <div class="fotcard">
+            <a href="" style="color: aliceblue;">FAQ's</a>
+            <a href="" style="color: aliceblue;">Investor relations</a>
+            <a href="" style="color: aliceblue;">Privacy</a>
+            <a href="" style="color: aliceblue;">Speed Test</a>
+
+            </div>
+            <div class="fotcard">
+            <a href="" style="color: aliceblue;">FAQ's</a>
+            <a href="" style="color: aliceblue;">Investor relations</a>
+            <a href="" style="color: aliceblue;">Privacy</a>
+            <a href="" style="color: aliceblue;">Speed Test</a>
+
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             English
+            </button>
+            <ul class="dropdown-menu my-5">
+              <li><a class="dropdown-item" href="#">Hindi</a></li>
+              <li><a class="dropdown-item" href="#">Telugu</a></li>
+            </ul>
+          </div>
+          <p style="color: aliceblue;" class="mt-6">Netflix India</p>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
